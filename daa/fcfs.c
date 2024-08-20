@@ -33,7 +33,7 @@ void findavgTime( int processes[], int n, int bt[])
 
 	// Calculate total waiting time and total turn 
 	// around time 
-	for (int i=0; i<n; i++) 
+	sfor (int i=0; i<n; i++) 
 	{ 
 		total_wt = total_wt + wt[i]; 
 		total_tat = total_tat + tat[i]; 
