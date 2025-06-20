@@ -2,20 +2,25 @@
 using namespace std;
 
 int main(){
-    int nums[]={10,4,24,-10,15};
-    int size=6;
-
+    int nums[5]={10,4,24,-10,15};
     int smallest= INT16_MAX;
-for (int i = 0; i < size; i++)
-{
-    if (nums[i]<smallest)
+    int largest= INT16_MIN;
+    for (int i = 0; i < 5; i++)
     {
-       smallest=nums[i];
-    }
-    
-}
-cout<<smallest;
+        if (nums[i]< smallest)
+        {
+            smallest=nums[i];
+        }
 
+        if (nums[i]> largest)
+        {
+            largest=nums[i];
+        }
+        
+        
+    }
+    cout<<smallest<<endl;
+    cout<<largest;
 
     return 0;
 }
